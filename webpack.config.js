@@ -17,7 +17,14 @@ module.exports = {
       }
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
+  resolve: {
+    extensions: ["*", ".js", ".jsx"],
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@views': path.resolve(__dirname, 'src/views'),
+    }
+  },
   output: {
     path: path.resolve(__dirname, "dist/"),
     filename: "bundle.js",
@@ -29,5 +36,6 @@ module.exports = {
     },
     port: 3000,
     hot: true,
+    historyApiFallback: true,
   },
 };
