@@ -1,0 +1,19 @@
+.blast-avatar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.blast-avatar__image {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.blast-avatar__signature::before {
+  content: '@';
+}

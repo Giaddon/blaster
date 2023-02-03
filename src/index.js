@@ -5,12 +5,14 @@ import {
 } from "react-router-dom";
 import { createRoot } from 'react-dom/client';
 import App from "./App";
-import { HomePage } from '@views';
+import { HomePage, ErrorPage } from '@views';
+import { Navbar } from '@components';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/app",

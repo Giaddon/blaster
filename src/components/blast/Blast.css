@@ -1,0 +1,12 @@
+.blast {
+  color: white;
+  font-size: 1.0rem;
+  font-family: Helvetica, Arial, sans-serif;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  font-weight: 300;
+}
