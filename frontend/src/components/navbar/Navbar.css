@@ -4,5 +4,6 @@ nav {
   height: 2.5rem;
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
+  max-width: 60rem;
 }

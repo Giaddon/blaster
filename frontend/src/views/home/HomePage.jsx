@@ -29,8 +29,8 @@ export default function HomePage() {
   return (
     <div className='home-page'>
       <Header type="h1" text="Welcome to Blaster" tColor="white" align="center" />
-      <Navbar />
       <BlastList blasts={blasts} />
+      <Navbar />
     </div>
   )
 }

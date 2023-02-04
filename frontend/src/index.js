@@ -5,8 +5,12 @@ import {
 } from "react-router-dom";
 import { createRoot } from 'react-dom/client';
 import App from "./App";
+import Frame from './Frame';
 import { HomePage, ErrorPage, UserPage } from '@views';
-import { Navbar } from '@components';
+
+const user = {
+  avatar: null,
+}
 
 const router = createBrowserRouter([
   {
@@ -21,7 +25,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/user",
-    element: <UserPage />,
+    element: <UserPage user={user} />,
     errorElement: <ErrorPage />,
   }
 ]);
